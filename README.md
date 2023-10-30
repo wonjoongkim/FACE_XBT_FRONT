@@ -31,3 +31,7 @@
 # Prettier - code formatter
 
 # Prettier ESLint
+
+### 안면인식 설치
+
+# yarn add react-webcam react-html5-camera-photo tracking

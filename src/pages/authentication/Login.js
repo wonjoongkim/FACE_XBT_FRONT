@@ -30,7 +30,8 @@ import { Search } from './Search';
 import PDFViewer from './PDFViewer';
 
 import { Document, Page, pdfjs } from 'react-pdf';
-import pdfFile from './xbtmanual.pdf';
+// import pdfFile from './xbtmanual.pdf';
+import { FacePicture } from './FacePicture';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
@@ -47,6 +48,7 @@ const Login = () => {
     const [joinModalOpen, setJoinModalOpen] = useState(false); // 회원가입창 Modal창
     const [searchModalOpen, setSearchModalOpen] = useState(false); // 아이디 찾기 | 비번 변경 Modal창
     const [manualModalOpen, setManualModalOpen] = useState(false); // 메뉴얼 Modal창
+    const [cameraOpen, setCameraOpen] = useState(false); // 카메라 Modal창
 
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
@@ -248,6 +250,9 @@ const Login = () => {
     const handleCancel = () => {
         setIsModalOpen(false);
     };
+    const handleCancel_camera = () => {
+        setCameraOpen(false);
+    };
 
     const joinhandleOk = () => {
         setJoinModalOpen(false);
@@ -352,9 +357,10 @@ const Login = () => {
                 const jwtToken = userLoginResponse.data.RET_DATA.accessToken;
                 userToken.setItem(jwtToken);
                 localStorage.setItem('LangTp', languageKey);
-                success_info();
+                setCameraOpen(true);
+                // success_info(); // 로그인 성공
             } else {
-                failure_info();
+                failure_info(); // 로그인 실패
             }
         }
     };
@@ -690,6 +696,22 @@ const Login = () => {
                 </div>
             </Modal>
             {/* 비밀번호 모달 창 End */}
+
+            {/* 안면인식 카메라 Start */}
+            <Modal
+                open={cameraOpen}
+                onCancel={handleCancel_camera}
+                centered
+                width={550}
+                style={{
+                    left: 130,
+                    zIndex: 999
+                }}
+                footer={null}
+            >
+                <FacePicture face_success={success_info} />
+            </Modal>
+            {/* 안면인식 카메라 End */}
         </>
     );
 };
