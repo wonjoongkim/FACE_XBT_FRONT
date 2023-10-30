@@ -1,0 +1,418 @@
+@charset "utf-8";
+
+/* ==================================================
+	탑메뉴
+================================================== */
+.tgnb {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    height: 80px;
+    padding: 0 52px;
+    background: #fff;
+}
+
+.tgnb h1 {
+    position: absolute;
+    left: 52px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 7;
+    font-family: 'Outfit';
+    font-size: 20px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.tgnb h1 span {
+    color: #155eb6;
+}
+
+.util {
+    position: absolute;
+    top: 50%;
+    right: 52px;
+    transform: translateY(-50%);
+}
+
+.util > a {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 7px 28px;
+    color: #aac1ff;
+    border: 1px solid #aac1ff;
+    border-radius: 1000px;
+}
+
+/* ==================================================
+	메인컨텐츠
+================================================== */
+.main_con {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.main_left,
+.main_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.mrcon_ic ul {
+    display: flex;
+    justify-content: center;
+}
+
+.main_left {
+    width: 635px;
+    margin-right: 142px;
+    justify-content: center;
+}
+
+.main_right {
+    flex-grow: 1;
+    background: rgba(14, 39, 108, 0.98);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+/* 노트북 사이즈 */
+@media screen and (max-width: 1700px) {
+    .main_left {
+        margin-right: 60px;
+    }
+}
+
+/* ==================================================
+	교육정보
+================================================== */
+.main_info {
+    background-image: url('../images/main/main_bg.png');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 38px 65px;
+}
+
+.minfo_top {
+    padding: 30px 15px 57px 15px;
+}
+
+.minfo_top > p {
+    font-size: 17px;
+    font-weight: 700;
+    color: #155eb6;
+}
+
+.minfo_top > h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #111;
+    margin-top: 20px;
+}
+
+.edu_btn {
+    width: 100%;
+    padding: 20px 0;
+    font-family: 'SUIT';
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    background: #1d377d;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.23), inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+    border-radius: 4px;
+}
+
+/* ==================================================
+	메인화면 Notice
+================================================== */
+.mnotice {
+    margin-top: 25px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.nnc_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #dce0e8;
+}
+
+.nnc_top h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.notice_list > li {
+    padding-top: 15px;
+}
+
+.notice_list > li > button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'SUIT';
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.notice_list > li > button .tit {
+    width: auto;
+    max-width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    color: #111;
+}
+
+.notice_list > li > button .date {
+    color: #666;
+}
+
+/* ==================================================
+	모달창 Notice 리스트
+================================================== */
+.md_notice {
+}
+
+.mdnc_top h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.bbslist {
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 32px;
+}
+
+.screen-hide {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    width: 0;
+    height: 0;
+    text-indent: -9999px;
+}
+
+.bbslist thead tr th {
+    padding: 14px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #666;
+    border-top: 1px solid #aac1ff;
+    border-bottom: 1px solid #dce0e8;
+    text-align: center;
+}
+
+.bbslist tbody tr td {
+    padding: 15px 2px 0 2px;
+    text-align: center;
+    font-size: 16px;
+    color: #111;
+    font-family: 'SUIT';
+    font-weight: 400;
+}
+
+.bbslist tbody tr td:last-child {
+    padding: 15px 2px;
+}
+
+.bbslist tbody tr:hover {
+    background: #ebf0fc;
+}
+
+.bbslist tbody tr td.al-Left {
+    text-align: left;
+}
+
+.bbslist tbody tr td button {
+    font-family: 'SUIT';
+    font-size: 16px;
+    font-weight: 400;
+    color: #111;
+    display: inline-block;
+    width: auto;
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+/* ==================================================
+	모달창 Notice 리스트 하단 숫자
+================================================== */
+.bbs_pagi {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.bbs_pagi ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bbs_pagi ul li a {
+    display: inline-block;
+    text-align: center;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    font-family: 'SUIT';
+    font-weight: 500;
+    color: #111;
+    border: 1px solid #e0e0e0;
+    border-radius: 1px;
+}
+
+.bbs_pagi ul li.active a,
+.bbs_pagi ul li a:hover {
+    color: #2a97ff;
+    border: 1px solid #2a97ff;
+}
+
+.bbs_pagi ul li:not(:first-child) {
+    margin-left: 10px;
+}
+
+.bbs_pagi ul li .page_prev,
+.bbs_pagi ul li .page_next {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+}
+
+/* ==================================================
+	모달창 Notice 게시물
+================================================== */
+.noticerw_sr {
+    margin-top: 40px;
+}
+
+.noticerw_top {
+    padding-bottom: 18px;
+    color: #111111;
+    border-bottom: 1px solid #dce0e8;
+}
+
+.noticerw_top > h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.noticerw_top > span {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.noticerw_con {
+    margin: 18px 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    color: #111111;
+}
+
+/* ==================================================
+	오른쪽 컨텐츠
+================================================== */
+.mr_con {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+    border-bottom: 1px solid #aac1ff;
+}
+
+.mrcon_tit {
+    flex-basis: 20%;
+    padding: 0 35px 0 55px;
+}
+
+.mrcon_tit > h1 {
+    font-size: 20px;
+    color: #bababa;
+}
+
+.mrcon_tit > h1 span {
+    display: block;
+}
+
+/* 아이콘 */
+.mrcon_ic {
+    flex-basis: 80%;
+    padding-right: 10px;
+}
+
+.mrcon_ic > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.mrcon_ic > ul > li {
+    /* 메뉴별 간격 (20 / 24) */
+    flex: 0 0 24%;
+    text-align: center;
+}
+
+.mrcon_ic > ul > li button {
+    font-family: 'SUIT';
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.mrcon_ic > ul > li button .circle {
+    position: relative;
+    overflow: hidden;
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.mrcon_ic > ul > li button .circle img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.mrcon_ic > ul > li button p {
+    padding-top: 10px;
+}
+
+/* 노트북 사이즈 */
+@media screen and (max-width: 1700px) {
+    .mrcon_tit {
+        padding: 0 50px 0 57px;
+    }
+}

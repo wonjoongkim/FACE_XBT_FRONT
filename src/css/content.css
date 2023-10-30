@@ -1,0 +1,1495 @@
+@charset "utf-8";
+
+/* ==================================================
+	공통사항
+================================================== */
+.contit {
+    font-size: 24px;
+    font-weight: 700;
+    color: #666666;
+}
+
+.conname {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.conbtn01 {
+    width: 116px;
+    font-family: 'SUIT';
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 13px;
+    color: #fff;
+    background: #1d377d;
+    border-radius: 4px;
+    box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+    filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.23));
+}
+
+.conbtn_pd01 {
+    margin: 0 13px 0 30px;
+}
+
+/* 박스안 스타일 */
+.conbox_sty {
+    background: #ffffff;
+    border: 1px solid #aac1ff;
+    border-radius: 8px;
+}
+
+.conbox_pd01 {
+    padding: 20px 23px;
+}
+
+/* ==================================================
+	컨텐츠
+================================================== */
+.xbt_content {
+    padding: 25px;
+}
+
+.xbt_con {
+}
+
+.xbttop01 > ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0 6px;
+}
+
+.xbttop02 > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6px;
+}
+
+.xbttop02 > ul > li:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* ==================================================
+	테이블 & 스크롤바  23.04.04 YJ-css 수정 (전체 가져가져주세요, 내용 삭제)
+================================================== */
+.con_table {
+    width: 100%;
+    padding-right: 11px;
+    overflow-y: auto;
+    direction: ltr;
+    background: #fff;
+}
+
+.con_table .table {
+    width: 100%;
+    padding-right: 11px;
+}
+
+.con_table .table tr:hover td,
+.con_table .table tr.on td {
+    background: #f2f6fc;
+}
+
+.con_table .table tr th,
+.con_table .table tr td {
+    padding: 10px 2px;
+    border-bottom: 1px solid #a9c0ff;
+    font-family: 'SUIT';
+    font-size: 1.4rem;
+    line-height: 1;
+    text-align: center;
+    color: #111111;
+    vertical-align: middle;
+}
+
+.con_table .table tr th {
+    font-weight: 700;
+}
+
+.con_table .table tr td {
+    font-weight: 500;
+}
+
+.con_table .table .t_blue {
+    color: #155eb6;
+}
+
+/* 물품연습 스크롤바 */
+.cop_table.scrollbar {
+    padding-right: 7px;
+    border-radius: 0;
+}
+
+.cop_table.scrollbar + .cop_table {
+    margin-top: 30px;
+}
+
+.cop_table .table tr th,
+.cop_table .table tr td {
+    padding: 12.5px 2px;
+}
+
+/* 스크롤 바 전체 */
+.con_table::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 8px;
+    height: calc(100% - 40px);
+}
+
+/* 스크롤 막대 */
+.con_table::-webkit-scrollbar-thumb {
+    width: 4px;
+    height: 60%;
+    background-color: #3895fd;
+    border-radius: 8px;
+}
+
+/* 스크롤 여백 */
+.cop_table::-webkit-scrollbar-track {
+    background-color: #dce0e8;
+    border-radius: 8px;
+}
+
+/* 높이 */
+.height110 {
+    height: 110px;
+}
+
+.height120 {
+    height: 120px;
+}
+
+.height160 {
+    height: 160px;
+}
+
+.height175 {
+    height: 175px;
+}
+
+.height200 {
+    height: 200px;
+}
+
+.height240 {
+    height: 240px;
+}
+
+.height360 {
+    /* 23.04.04 YJ-css 추가 */
+    height: 360px;
+}
+
+/* ==================================================
+	학습 상단
+================================================== */
+.learn_con {
+    padding: 25px 25px 0 25px;
+}
+
+.learnct01 > ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 0 6px;
+}
+
+.learnct01 > ul > li:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.learnct01 > ul > li h3 {
+    font-size: 17px;
+    font-weight: 700;
+    color: #0e276c;
+    text-align: center;
+}
+
+.learnct02 {
+    background: #fff;
+    border: 1px solid #aac1ff;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 20px 23px 20px 0;
+}
+
+.learnct02 > ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.learnct02 > ul > li:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* 타이틀 */
+.learntit_con {
+    max-width: 500px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+}
+
+.learntit_con02 {
+    max-width: 660px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [4];
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+}
+
+.learntit {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #666;
+}
+
+.learntit:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #aac1ff;
+}
+
+/* 문제 문항수 */
+.learnct02_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question {
+    font-weight: 600;
+    font-size: 18px;
+    color: #9e9e9e;
+}
+
+.question > span {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #0e276c;
+    margin-left: 5px;
+}
+
+/* 학습시간 분:초 */
+.question_box {
+    padding-left: 50px;
+}
+
+.question_box > dl {
+    display: flex;
+    align-items: center;
+}
+
+.question_box > dl > dd {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: #d9d9d9;
+}
+
+.question_box > dl > dd.qsbox {
+    padding: 10px;
+    background: linear-gradient(180deg, #5a5a5a 0%, #424242 100%);
+    border-radius: 4px;
+    color: #fff;
+}
+
+.qsb_pd {
+    padding: 0 6px;
+}
+
+/* 시작&종료 */
+.learnbtn {
+    width: 178px;
+    padding: 9px 0;
+    font-family: 'SUIT';
+    font-size: 17px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn_start {
+    background: #1d377d;
+    box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+    filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.23));
+}
+
+.btn_end {
+    margin-left: 23px;
+    background: #666666;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.23), inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+}
+
+.btn_break {
+    margin-left: 23px;
+    background: #f89007;
+    filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.23));
+}
+
+.btn_break_on {
+    margin-left: 23px;
+    background: #f83f07;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.23), inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+    z-index: 99999;
+}
+/* ==================================================
+	X-RAY 이미지 나오는 컨텐츠
+================================================== */
+.learnc_img {
+    height: 520px;
+    margin-top: 20px;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#learn01_start_on,
+#learn02_start_on {
+    display: none;
+}
+
+#learn03_start_break {
+    display: none;
+}
+
+#learn01_img {
+    position: relative;
+    overflow: hidden;
+}
+
+#learn01_img .image {
+    position: absolute;
+    right: -680px;
+    top: 0;
+}
+
+#learn02_img {
+    text-align: center;
+}
+
+#learn02_img .image {
+    display: none;
+}
+
+#learn02_progress {
+    display: none;
+    height: 10px;
+    background-color: #ccc;
+    margin-top: 10px;
+}
+
+#learn02_progress .progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+}
+
+/* 슬라이더 타입 - 스크롤 아이콘 이미지 */
+input[type='range'] {
+    background: transparent;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    /*이미지로 사용*/
+    background-image: url('../images/learning/scroll.svg');
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+}
+
+input[type='range']::-moz-range-thumb {
+    background-image: url('../images/learning/scroll.svg');
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border: 0;
+    background-color: #f2f6fc;
+}
+
+input[type='range']:disabled::-webkit-slider-thumb {
+    background-image: url('../images/learning/scroll_disable.svg');
+}
+
+input[type='range']:disabled::-moz-range-thumb {
+    background-image: url('../images/learning/scroll_disable.svg');
+}
+
+/* ==================================================
+	학습 하단부
+================================================== */
+.learn_bottom {
+    width: 100%;
+    background: #555555;
+    padding: 20px 40px;
+    border-radius: 0 0 8px 8px;
+}
+
+.learn_btcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.learn_btcon > div {
+    position: relative;
+}
+
+/* 왼쪽 아이콘 */
+.learnbtc01 {
+    display: flex;
+    align-items: center;
+    height: 79px;
+    padding-right: 40px;
+}
+
+.learnbtc01:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #9e9e9e;
+}
+
+.learnbtc01 > ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [4];
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 30px;
+}
+
+.learnbtc01 > ul > li a.on img,
+.learnbtc01 > ul > li a:hover img {
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 1));
+}
+
+/* 흑백명도 */
+.learnbtc02 {
+    position: relative;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.learnbtc02 > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.learnbtc02 > ul:last-child {
+    margin-top: 10px;
+}
+
+.learnbtc02 > ul > li a span {
+    position: relative;
+    display: block;
+    width: 52px;
+    height: 22px;
+}
+
+.learnbtc02.lrn_sbrig > ul > li a span {
+    width: 40px;
+    height: 22px;
+}
+
+.learnbtc02 > ul > li a.on span:after,
+.learnbtc02 > ul > li a:hover span:after,
+.copbtc02 > ul > li a.on span:after,
+.copbtc02 > ul > li a:hover span:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 8px;
+    width: 11px;
+    background: url('../images/common/triangle.png');
+    background-repeat: no-repeat;
+}
+
+.brig_ic01_01 {
+    background: #fff;
+}
+
+.brig_ic01_02 {
+    background: #d6f5fd;
+}
+
+.brig_ic01_03 {
+    background: #91ddf0;
+}
+
+.brig_ic01_04 {
+    background: #4cc2e1;
+}
+
+.brig_ic01_05 {
+    background: #029fc7;
+}
+
+.brig_ic01_06 {
+    background: #007c9c;
+}
+
+.brig_ic02_01 {
+    background: #fff;
+}
+
+.brig_ic02_02 {
+    background: #eaeaea;
+}
+
+.brig_ic02_03 {
+    background: #c5c5c5;
+}
+
+.brig_ic02_04 {
+    background: #9d9d9d;
+}
+
+.brig_ic02_05 {
+    background: #454545;
+}
+
+.brig_ic02_06 {
+    background: #222;
+}
+
+/* 이미지 관련 아이콘 */
+.learnbtc03 {
+    display: flex;
+    align-items: center;
+    height: 79px;
+    padding: 0 30px;
+}
+
+.learnbtc03:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #9e9e9e;
+}
+
+.learnbtc03:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #9e9e9e;
+}
+
+.learnbtc03 > ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+}
+
+.learnbtc03 > ul > li a.on img,
+.learnbtc03 > ul > li a:hover img {
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 1));
+}
+
+.learnbtc03 > ul > li:last-child a.on img,
+.learnbtc03 > ul > li:last-child a:hover img {
+    filter: drop-shadow(0px 0px 2.5px rgba(255, 255, 255, 1));
+}
+
+/* Pass / Open / Prohibited */
+.learnbtc04 {
+    display: flex;
+    align-items: center;
+    height: 79px;
+    padding: 0 50px;
+}
+
+.learnbtc04:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #9e9e9e;
+}
+
+.learnbtc04 > ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 50px;
+}
+
+.learnbtc04 > ul > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lnbtc_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lnbtc_btn > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 49px;
+    height: 49px;
+    background: #666666;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.23), inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+    border-radius: 5px;
+}
+
+.lnbtc_btnon > span {
+    background: #1d377d;
+}
+
+.lnbtc_btn > p {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #dce0e8;
+    padding-top: 5px;
+}
+
+/* Stop */
+.learnbtc05 {
+    display: flex;
+    align-items: center;
+    padding-left: 46px;
+}
+
+/* 썸네일 */
+.learnbtc06 {
+    margin-left: auto;
+}
+
+.learnbtc06 img {
+    max-width: 106px;
+    border-radius: 4px;
+}
+
+/* 노트북 사이즈 */
+@media screen and (max-width: 1700px) {
+    .learnbtc02.lrn_sbrig > ul > li a span {
+        width: 30px;
+    }
+}
+
+/* ==================================================
+	합격 / 불합격 / 완료
+================================================== */
+.learn_scwd {
+    width: 542px;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.scwd_txt01 {
+    margin-top: 35px;
+}
+
+.scwd_txt01 > h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #155eb6;
+}
+
+.scwd_txt01 > h3 span {
+    position: relative;
+    font-size: 16px;
+    font-weight: 700;
+    color: #666666;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.scwd_txt01 > h3 span:before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 1px;
+    height: 20px;
+    background: #aac1ff;
+}
+
+.scwd_txt01 > h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0e276c;
+}
+
+.scwd_txt01 > h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0e276c;
+    margin: 20px 0 55px 0;
+}
+
+.scwd_txt02 {
+    margin: 20px 0 55px 0;
+}
+
+.scwd_txt02 > h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.scwd_txt02 > h1 span {
+    font-weight: 700;
+}
+
+.scwd_txt02 > p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #666666;
+}
+
+/* 글자색상 */
+.scwd_pass {
+    color: #26a94b;
+}
+
+.scwd_fail {
+    color: #e4022e;
+}
+
+/* ==================================================
+	학습 완료
+================================================== */
+.learn_comp {
+    display: flex;
+    /* 왼쪽 끝과 오른쪽 끝에 배치 */
+    justify-content: space-between;
+    /* 세로 높이를 같게 맞춤 */
+    align-items: stretch;
+}
+
+.lrncomp_left,
+.lrncomp_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lrncomp_left {
+    flex-basis: 55%;
+    /* lrncomp_right와 간격을 띄우기 위한 margin 값 설정 */
+    margin-right: 20px;
+}
+
+.lrncomp_right {
+    /* lrncomp_right가 남은 공간을 모두 채우게 함 */
+    flex-grow: 1;
+}
+
+/* 왼쪽 상단 */
+.lrncompl_top {
+    padding: 30px 20px;
+    border-radius: 8px 8px 0 0;
+    /* lrncomp_left가 남은 공간을 모두 채우게 함 */
+    flex-grow: 1;
+}
+
+.lrncompl_tit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.lrncompl_tit h3 {
+    width: 160px;
+    padding: 10px 0;
+    background: #666666;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.23), inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
+
+.lrncompl_img {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.lrncompl_img img {
+    width: 100%;
+    max-width: 800px;
+}
+
+/* 왼쪽 하단 */
+.lrncompl_bot {
+    width: 100%;
+    background: #555555;
+    padding: 20px 30px;
+    border-radius: 0 0 8px 8px;
+}
+
+.lrncomp_right .con_table .table tr th {
+    border-top: 1px solid #a9c0ff;
+}
+
+.lrncompr_con01,
+.lrncompr_con02,
+.lrncompr_con03 {
+    /* lrncomp_right 안의 컨텐츠들이 모두 같은 높이를 가지도록 함 */
+    height: 100%;
+}
+
+.lrncompr_con02 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.lrncompr_con02 img {
+    max-width: 400px;
+}
+
+/* ==================================================
+	학습정보
+================================================== */
+.score_img {
+    /* height: 648px; */
+}
+
+.score_img .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.score_img .img img {
+    max-width: 100%;
+}
+
+/* ==================================================
+	물품연습
+================================================== */
+.practice_con {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.practice_left,
+.practice_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.practice_left {
+    flex-basis: calc(33% - 23px);
+    margin-right: 23px;
+    flex-grow: 1;
+}
+
+.practice_left .cop_con + .cop_con {
+    margin-top: 10px;
+    flex-grow: 1;
+}
+
+.cop_con .t_blue {
+    color: #155eb6;
+}
+
+.cop_con_tlist {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.cop_con_tlist div {
+    padding: 10px 20px;
+}
+
+.cop_con_tlist div:first-child,
+.cop_con_tlist div:nth-child(2) {
+    border-bottom: solid 1px #a9c0ff;
+}
+
+.cop_con_tlist p {
+    padding: 6px 0;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #666666;
+}
+
+.cop_con_tlist .number,
+.cop_con_tlist .release {
+    color: #155eb6;
+    background-color: #f2f6fc;
+}
+
+.cop_con_btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.cop_con_btn button {
+    width: 134px;
+    font-family: 'SUIT';
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 0.45rem 0;
+    color: #fff;
+    background: #1d377d;
+    border-radius: 4px;
+    box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+    filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.23));
+}
+
+.cop_con_btn .back {
+    background-image: url('../images/practice/back.svg');
+    background-position: 22.5% center;
+    background-repeat: no-repeat;
+}
+
+.cop_con_btn .back .on {
+    background-image: url('../images/practice/back.svg');
+    background-position: 22.5% center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 1));
+}
+
+.cop_con_btn .next {
+    background-image: url('../images/practice/next.svg');
+    background-position: 77.5% center;
+    background-repeat: no-repeat;
+}
+
+.cop_con_btn .next .on {
+    background-image: url('../images/practice/next.svg');
+    background-position: 77.5% center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 1));
+}
+
+.practice_right {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #aac1ff;
+    border-radius: 8px;
+    /* width 추가 */
+    width: 60%;
+}
+
+.practice_right .angle {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    /* height: 100%; 변경전 */
+    height: 715px;
+}
+
+.practice_right .angle::before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 0.5px);
+    width: 1px;
+    /* height: 100%; 변경전 */
+    height: 715px;
+    background: #aac1ff;
+}
+
+.practice_right .angle:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 0.5px);
+    width: 100%;
+    height: 1px;
+    background: #aac1ff;
+}
+
+.practice_right .angle div {
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.practice_right .angle div p {
+    width: 60px;
+    font-family: 'SUIT';
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 26px;
+    text-align: center;
+    color: #155eb6;
+    border: 1px solid #155eb6;
+    border-radius: 4px;
+}
+
+.practice_right .angle div img {
+    max-width: 100%;
+    padding-top: 10px;
+    /* max-height: 220px; */
+}
+
+/* ====== 옵션 ====== */
+.practice_select * {
+    box-sizing: border-box;
+}
+
+.practice_select {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    width: 140px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #155eb6;
+    background: url('../images/practice/arrow_lower.svg') calc(100% - 7px) center no-repeat;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.practice_select.active {
+    background: url('../images/practice/arrow_up.svg') calc(100% - 7px) center no-repeat;
+    transition: 0.1s;
+}
+
+.practice_select .label {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    padding-left: 20px;
+    padding-right: 25px;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'SUIT';
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #155eb6;
+}
+
+.practice_select .pra_optionList {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    padding: 0;
+    font-family: 'SUIT';
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #155eb6;
+    background: white;
+    list-style-type: none;
+    border-radius: 15px;
+    border: solid 1px #155eb6;
+    overflow: hidden;
+    transition: 0.2s ease-in;
+    opacity: 0;
+}
+
+.practice_select.active .pra_optionList {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.practice_select .pra_item {
+    border-bottom: 1px solid #155eb6;
+    padding: 6px 20px 6px;
+    transition: 0.1s;
+}
+
+.practice_select .pra_item:hover {
+    background: #f2f6fc;
+}
+
+.practice_select .pra_item:last-child {
+    border-bottom: 0 none;
+}
+
+/* ====== 물품연습 하단부 ====== */
+.practice_bot {
+    width: 100%;
+    background: #555555;
+    padding: 20px 4rem;
+    border-radius: 0 0 8px 8px;
+}
+
+.practice_btcon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.practice_btcon > div {
+    position: relative;
+}
+
+/* 왼쪽 아이콘 */
+.copbtc01 {
+    display: flex;
+    align-items: center;
+    height: 79px;
+}
+
+.copbtc01 > ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [4];
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 5rem;
+}
+
+.copbtc01 > ul > li a.on img,
+.copbtc01 > ul > li a:hover img {
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 1));
+}
+
+/* 흑백명도 */
+.copbtc02 {
+    position: relative;
+    padding: 0 3.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copbtc02:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #9e9e9e;
+}
+
+.copbtc02:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #9e9e9e;
+}
+
+.copbtc02 > ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copbtc02 > ul:last-child {
+    margin-top: 10px;
+}
+
+.copbtc02 > ul > li a span {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 22px;
+}
+
+/* 이미지 관련 아이콘 */
+.copbtc03 {
+    display: flex;
+    align-items: center;
+    height: 79px;
+}
+
+.copbtc03 > ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 5rem;
+}
+
+.copbtc03 > ul > li a.on img,
+.copbtc03 > ul > li a:hover img {
+    filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 1));
+}
+
+.copbtc03 > ul > li:last-child a.on img,
+.copbtc03 > ul > li:last-child a:hover img {
+    filter: drop-shadow(0px 0px 2.5px rgba(255, 255, 255, 1));
+}
+
+/* ==================================================
+	반입금지물품 - 23.04.03 MJ-css 추가 -
+================================================== */
+.banItems_content {
+    position: relative;
+    padding: 0;
+    background: #ffffff;
+    border-radius: 8px;
+}
+
+.banItems_content .close_btn {
+    /* 23.04.04 YJ-css 수정  */
+    top: 15px;
+    right: 2rem;
+    width: 25px;
+    height: 24px;
+    background-size: cover;
+}
+
+.banItems_content .xbt_top {
+    height: 6.8rem;
+    padding: 0 3rem;
+    border-bottom: 1px solid #aac1ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banItems_content .xbt_con {
+    padding: 2rem 3rem;
+}
+
+/* 표 */
+.banItems_table {
+    width: 100%;
+    max-height: 700px;
+    padding-right: 10px;
+    overflow-y: auto;
+    direction: ltr;
+    background: #fff;
+}
+
+.banItems_table .table {
+    width: 100%;
+    padding-right: 11px;
+}
+
+.banItems_table .table tr:hover th,
+.banItems_table .table tr.on th,
+.banItems_table .table tr:hover td,
+.banItems_table .table tr.on td {
+    background: #f2f6fc;
+}
+
+.banItems_table .table tr th,
+.banItems_table .table tr td {
+    height: 60px;
+    border-bottom: 1px solid #dce0e8;
+    font-family: 'SUIT';
+    font-size: 1.6rem;
+    text-align: left;
+    color: #111111;
+    vertical-align: middle;
+}
+
+.banItems_table .table tr th {
+    font-weight: 700;
+}
+
+.banItems_table .table tr td {
+    font-weight: 500;
+}
+
+.banItems_table .table tr span {
+    display: block;
+    text-align: center;
+}
+
+/* 스크롤 바 전체 */
+.banItems_table::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 8px;
+    height: calc(100% - 40px);
+}
+
+/* 스크롤 막대 */
+.banItems_table::-webkit-scrollbar-thumb {
+    width: 5px;
+    height: 60%;
+    background-color: #3895fd;
+    border-radius: 8px;
+}
+
+/* 스크롤 여백 */
+.banItems_table::-webkit-scrollbar-track {
+    background-color: #dce0e8;
+    border-radius: 8px;
+}
+
+/* ==================================================
+	반입금지물품연습 - 23.04.03 MJ-css 추가 -
+================================================== */
+.banItems_table .table thead tr th {
+    color: #98bbe0;
+    text-align: center;
+    border-bottom: 2px solid #dce0e8;
+}
+
+.banItems_table .table thead .t_left {
+    text-align: left;
+}
+
+/* ====== 반입금지물품연습 옵션 ====== */
+.practice_test_select * {
+    box-sizing: border-box;
+}
+
+.practice_test_select {
+    width: 100%;
+    height: 34px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.practice_test_select .label {
+    display: flex;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    padding-left: 20px;
+    padding-right: 25px;
+    cursor: pointer;
+    font-family: 'SUIT';
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #98bbe0;
+    border-radius: 17px;
+    border: 1px solid #98bbe0;
+    background: url('../images/practice/arrow_lower_sky.svg') calc(100% - 7px) center no-repeat;
+    background-color: #f2f6fc;
+}
+
+.practice_test_select .pra_optionList {
+    position: relative;
+    top: -1px;
+    width: 100%;
+    max-height: 0;
+    padding: 0;
+    font-family: 'SUIT';
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #155eb6;
+    background: white;
+    list-style-type: none;
+    border-radius: 17px;
+    border: solid 1px #155eb6;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.practice_test_select .pra_item {
+    border-bottom: 1px solid #155eb6;
+    padding: 9px 20px;
+}
+
+.practice_test_select .pra_item:last-child {
+    border-bottom: 0 none;
+}
+
+.practice_test_select .label:hover,
+.practice_test_select .label:active {
+    color: #155eb6;
+    border: 1px solid #155eb6;
+    background: url('../images/practice/arrow_up.svg') calc(100% - 7px) center no-repeat #fff;
+}
+
+.practice_test_select:visited {
+    border: 1px solid #155eb6;
+    background: url('../images/practice/arrow_lower.svg') calc(100% - 7px) center no-repeat;
+}
+
+.practice_test_select .label_on,
+.practice_test_select:hover .label_on,
+.practice_test_select:active .label_on,
+.practice_test_select:visited .label_on {
+    border: 1px solid #155eb6;
+    color: #155eb6;
+    background: url('../images/practice/arrow_lower.svg') calc(100% - 7px) center no-repeat #fff;
+}
+
+.practice_test_select.active .pra_optionList {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.practice_test_select .pra_item:hover {
+    background-color: #f2f6fc;
+}
+
+.reverse_optionList {
+    margin-top: -231px;
+}
+
+.blur {
+    filter: blur(15px); /* 흐리게 표시할 정도를 조절할 수 있습니다. */
+    pointer-events: none;
+    opacity: 0.3;
+}

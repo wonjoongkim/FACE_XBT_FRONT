@@ -1,0 +1,1155 @@
+@charset "utf-8";
+
+/* ==================================================
+	공통내용
+================================================== */
+iframe {
+    background: #f2f6fc;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+}
+
+.theory_bg {
+    background: #f2f6fc;
+}
+
+.theory_con {
+    padding: 25px 25px 0 25px;
+}
+
+/* ==================================================
+	내용 상단
+================================================== */
+.thetop > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6px;
+}
+
+.thetop > ul > li:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.theory_top {
+    background: #fff;
+    border: 1px solid #aac1ff;
+    border-radius: 8px;
+    margin-top: 15px;
+    padding: 20px 23px;
+}
+
+.theory_top > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theory_top > ul > li {
+    display: flex;
+    align-items: center;
+    flex-basis: 60%;
+}
+
+.theory_top > ul > li:last-child {
+    flex-basis: 40%;
+    justify-content: flex-end;
+}
+
+/* ==================================================
+	진행바
+================================================== */
+.prog_bar {
+    flex-basis: 70%;
+    max-width: 762px;
+    border-radius: 4px;
+    color: #9e9e9e;
+    font-size: 24px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    padding: 9px 5px;
+    margin-right: 24px;
+}
+
+.progbar_bg01 {
+    /* 그레이 */
+    background: #dce0e8;
+}
+
+.progbar_bg02 {
+    /* 파란색 */
+    background: #0e276c;
+}
+
+/* ==================================================
+	버튼
+================================================== */
+.thebtn {
+    width: 186px;
+    font-family: 'SUIT';
+    font-size: 16px;
+    font-weight: 600;
+    padding: 9px 13px;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+    filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.23));
+}
+
+.thebtn_blue {
+    background: #1d377d;
+}
+
+.thebtn_gray {
+    background: #666;
+}
+
+.thebtn_red {
+    background: #e4022e;
+}
+
+.thebtn_end {
+    margin-left: 23px;
+}
+
+/* ==================================================
+	이론내용 하단
+================================================== */
+.theory_bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+/*.theoryb_left,
+.theoryb_right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-grow: 1;
+}*/
+
+.theoryb_left {
+    flex-basis: calc(40% - 23px);
+    margin-right: 23px;
+    height: 100%;
+}
+
+.theoryb_right {
+    flex-basis: 60%;
+}
+
+.theoryb_right .question_detail {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.theoryb_box {
+    background: #ffffff;
+    border: 1px solid #aac1ff;
+    border-radius: 8px;
+}
+
+.theoryb_box_pd01 {
+    padding: 20px 23px;
+}
+
+/* ==================================================
+	테이블 & 스크롤바 
+================================================== */
+.theory_table {
+    width: 100%;
+    padding-right: 11px;
+    overflow-y: auto;
+    direction: ltr;
+    background: #fff;
+}
+
+.theory_table .table {
+    width: 100%;
+    padding-right: 11px;
+}
+
+.theory_table .table tr:hover td,
+.theory_table .table tr.on td {
+    background: #f2f6fc;
+}
+
+.theory_table .table tr th,
+.theory_table .table tr td {
+    border-bottom: 1px solid #a9c0ff;
+    font-family: 'SUIT';
+    font-size: 1.4rem;
+    line-height: 1.3;
+    text-align: center;
+    color: #111111;
+    vertical-align: middle;
+}
+
+.theory_table .table tr th {
+    padding: 0 2px 18px 2px;
+    font-weight: 700;
+}
+
+.theory_table .table tr td {
+    padding: 18px 2px;
+    font-weight: 500;
+}
+
+.theory_table .table tr td:nth-child(2) {
+    text-align: left;
+    word-break: keep-all;
+}
+
+.theory_table .table .t_blue {
+    color: #155eb6;
+}
+
+/* 스크롤 바 전체 */
+.theory_table::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 8px;
+    height: calc(100% - 40px);
+}
+
+/* 스크롤 막대 */
+.theory_table::-webkit-scrollbar-thumb {
+    width: 4px;
+    height: 60%;
+    background-color: #3895fd;
+    border-radius: 8px;
+}
+
+/* 스크롤 여백 */
+.cop_table::-webkit-scrollbar-track {
+    background-color: #dce0e8;
+    border-radius: 8px;
+}
+
+/* 높이 */
+.height550 {
+    height: 550px;
+}
+
+/* ==================================================
+	문제유형 - 사지선다형 & 이미지선다형
+================================================== */
+.matter01_tit {
+    display: flex;
+    align-items: center;
+}
+
+.mat01tit_left {
+    position: relative;
+    flex-basis: 20%;
+    text-align: center;
+    font-family: 'SUIT';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.mat01tit_left > span {
+    display: block;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    color: #155eb6;
+}
+
+.mat01tit_left:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #aac1ff;
+}
+
+.mat01tit_right {
+    position: relative;
+    flex-basis: 80%;
+    padding-left: 25px;
+    line-height: 1.4;
+    color: #111;
+    font-weight: 500;
+}
+
+.theorybr02 {
+    height: 100%;
+    margin-top: 10px;
+}
+
+.mat01tit_short {
+    font-size: 20px;
+}
+
+.mat01tit_long {
+    font-size: 15px;
+}
+
+.matter01_que {
+    position: relative;
+    height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.matter01_que > li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    height: 245px;
+    background: #fff;
+}
+
+.matter01_que > li:nth-child(1) {
+    border-top: 1px solid #aac1ff;
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-radius: 7px 0px 0px 0px;
+}
+
+.matter01_que > li:nth-child(2) {
+    border-top: 1px solid #aac1ff;
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-right: 1px solid #aac1ff;
+    border-radius: 0 7px 0px 0px;
+}
+
+.matter01_que > li:nth-child(3) {
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-radius: 0px 0px 0px 7px;
+}
+
+.matter01_que > li:nth-child(4) {
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-right: 1px solid #aac1ff;
+    border-radius: 0px 0px 7px 0px;
+}
+
+.matter01_que > li.on,
+.matter01_que > li:hover {
+    border: 2px solid #155eb6;
+    background: #f2f6fc;
+}
+
+.matter01_que > li:nth-child(1).on,
+.matter01_que > li:nth-child(1):hover {
+    border-radius: 7px 0px 0px 0px;
+}
+
+.matter01_que > li:nth-child(2).on,
+.matter01_que > li:nth-child(2):hover {
+    border-radius: 0 7px 0px 0px;
+}
+
+.matter01_que > li:nth-child(3).on,
+.matter01_que > li:nth-child(3):hover {
+    border-radius: 0px 0px 0px 7px;
+}
+
+.matter01_que > li:nth-child(4).on,
+.matter01_que > li:nth-child(4):hover {
+    border-radius: 0px 0px 7px 0px;
+}
+
+.matter01_que > li h3 {
+    position: absolute;
+    top: 15px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    background: #dce0e8;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.matter01_que > li.on h3,
+.matter01_que > li:hover h3 {
+    background: #1d377d;
+}
+
+.matter03_que {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.matter03_que > li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+}
+
+.matter03_que > li:nth-child(1) {
+    border-top: 1px solid #aac1ff;
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-radius: 7px 0px 0px 0px;
+}
+
+.matter03_que > li:nth-child(2) {
+    border-top: 1px solid #aac1ff;
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-right: 1px solid #aac1ff;
+    border-radius: 0 7px 0px 0px;
+}
+
+.matter03_que > li:nth-child(3) {
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-radius: 0px 0px 0px 7px;
+}
+
+.matter03_que > li:nth-child(4) {
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-right: 1px solid #aac1ff;
+    border-radius: 0px 0px 7px 0px;
+}
+
+.matter03_que > li.on,
+.matter03_que > li:hover {
+    border: 2px solid #155eb6;
+    background: #f2f6fc;
+}
+
+.matter03_que > li:nth-child(1).on,
+.matter03_que > li:nth-child(1):hover {
+    border-radius: 7px 0px 0px 0px;
+}
+
+.matter03_que > li:nth-child(2).on,
+.matter03_que > li:nth-child(2):hover {
+    border-radius: 0 7px 0px 0px;
+}
+
+.matter03_que > li:nth-child(3).on,
+.matter03_que > li:nth-child(3):hover {
+    border-radius: 0px 0px 0px 7px;
+}
+
+.matter03_que > li:nth-child(4).on,
+.matter03_que > li:nth-child(4):hover {
+    border-radius: 0px 0px 7px 0px;
+}
+
+.matter03_que > li h3 {
+    position: absolute;
+    top: 15px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    background: #dce0e8;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.matter03_que > li.on h3,
+.matter03_que > li:hover h3 {
+    background: #1d377d;
+}
+
+.matter04_que {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.matter04_que > li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+}
+
+.matter04_que > li:nth-child(1) {
+    border-top: 1px solid #aac1ff;
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-radius: 7px 0px 0px 0px;
+}
+
+.matter04_que > li:nth-child(2) {
+    border-top: 1px solid #aac1ff;
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-right: 1px solid #aac1ff;
+    border-radius: 0 7px 0px 0px;
+}
+
+.matter04_que > li:nth-child(3) {
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-radius: 0px 0px 0px 7px;
+}
+
+.matter04_que > li:nth-child(4) {
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-right: 1px solid #aac1ff;
+    border-radius: 0px 0px 7px 0px;
+}
+
+.matter04_que > li.on,
+.matter04_que > li:hover {
+    border: 2px solid #155eb6;
+    background: #f2f6fc;
+}
+
+.matter04_que > li:nth-child(1).on,
+.matter04_que > li:nth-child(1):hover {
+    border-radius: 7px 0px 0px 0px;
+}
+
+.matter04_que > li:nth-child(2).on,
+.matter04_que > li:nth-child(2):hover {
+    border-radius: 0 7px 0px 0px;
+}
+
+.matter04_que > li:nth-child(3).on,
+.matter04_que > li:nth-child(3):hover {
+    border-radius: 0px 0px 0px 7px;
+}
+
+.matter04_que > li:nth-child(4).on,
+.matter04_que > li:nth-child(4):hover {
+    border-radius: 0px 0px 7px 0px;
+}
+
+.matter04_que > li h3 {
+    position: absolute;
+    top: 15px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    background: #dce0e8;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.matter04_que > li.on h3,
+.matter04_que > li:hover h3 {
+    background: #1d377d;
+}
+
+/* 사지선다형 */
+.matter01_choice {
+    width: 100%;
+    line-height: 1.3;
+    font-weight: 600;
+    word-break: keep-all;
+    color: #111;
+}
+
+.mat01choice_short {
+    padding: 10px 30px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.mat01choice_long {
+    padding: 10px 20px 10px 80px;
+    font-size: 18px;
+}
+
+/* 이미지선다형 */
+.matter01_img {
+    width: 100%;
+    text-align: center;
+}
+
+.matter01_img img {
+    max-height: 175px;
+    border-radius: 7px;
+}
+
+/* ==================================================
+	문제유형 - O&X형
+================================================== */
+.matter02_que {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.matter02_que:before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 0.5px);
+    width: 1px;
+    height: 100%;
+    background: #aac1ff;
+}
+
+.matter02_que > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matter02_que > li.on,
+.matter02_que > li:hover {
+    border: 2px solid #155eb6;
+    background: #f2f6fc;
+}
+
+.matter02_que > li:nth-child(1).on,
+.matter02_que > li:nth-child(1):hover {
+    border-radius: 7px 0px 0px 7px;
+}
+
+.matter02_que > li:nth-child(1).on .mo,
+.matter02_que > li:nth-child(1):hover .mo {
+    background: url('../images/theory/o_on.svg');
+}
+
+.matter02_que > li:nth-child(2).on,
+.matter02_que > li:nth-child(2):hover {
+    border-radius: 0px 7px 7px 0px;
+}
+
+.matter02_que > li:nth-child(2).on .mx,
+.matter02_que > li:nth-child(2):hover .mx {
+    background: url('../images/theory/x_on.svg');
+}
+
+.o_off {
+    width: 121px;
+    height: 121px;
+    background: url('../images/theory/o_off.svg');
+}
+
+.o_on {
+    width: 121px;
+    height: 121px;
+    background: url('../images/theory/o_on.svg');
+}
+
+.x_off {
+    width: 105px;
+    height: 105px;
+    background: url('../images/theory/x_off.svg');
+}
+
+.x_on {
+    width: 105px;
+    height: 105px;
+    background: url('../images/theory/x_on.svg');
+}
+
+/* ==================================================
+	문제유형 - 이미지+사지선다형
+================================================== */
+.theorybr01_con {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.theorybr01c_left,
+.theorybr01c_right {
+    height: 100%;
+}
+
+.theorybr01c_left {
+    flex-basis: calc(40% - 23px);
+    margin-right: 23px;
+    background: #ffffff;
+    border: 1px solid #aac1ff;
+    border-radius: 8px;
+    padding: 0 30px;
+}
+
+.theorybr01c_right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 60%;
+    background: #ffffff;
+    border: 1px solid #aac1ff;
+    border-radius: 8px;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.theorybr01c_right img {
+    max-height: 286px;
+}
+
+.matter02_tit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 25px 0;
+}
+
+.matter02_tit02 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mat02tit_top {
+    position: relative;
+    text-align: center;
+    font-family: 'SUIT';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+
+.mat02tit_top > span {
+    display: block;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    color: #155eb6;
+}
+
+.mat02tit_top:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #aac1ff;
+}
+
+.mat02tit_bot {
+    position: relative;
+    line-height: 1.4;
+    color: #111;
+    font-weight: 500;
+    padding: 25px 0;
+}
+
+.mat02tit_top,
+.mat02tit_bot,
+.mat02tit_last {
+    width: 100%;
+    margin-top: auto;
+}
+
+.mat02tit_top {
+    order: 1;
+}
+
+.mat02tit_bot {
+    order: 2;
+}
+
+.mat02tit_short {
+    font-size: 20px;
+}
+
+.mat02tit_long {
+    font-size: 15px;
+}
+
+.mat02tit_last {
+    order: 3;
+}
+
+.mat02tit_last .ranswer_box {
+    width: 100%;
+    background: #f2f6fc;
+    border-radius: 4px;
+    padding: 7px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #155eb6;
+}
+
+/* ==================================================
+	합격/불합격
+================================================== */
+.psfa_title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #9e9e9e;
+    line-height: 1.4;
+}
+
+.psfa_title > span {
+    display: block;
+    font-size: 36px;
+}
+
+.ps_color {
+    color: #26a94b;
+}
+
+.fa_color {
+    color: #e4022e;
+}
+
+.psfa_txt01 {
+    padding: 37px 0;
+}
+
+.psfa_txt01 > h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+}
+
+.psfa_txt01 > h3 span {
+    position: relative;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.psfa_txt01 > h3 span:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 1px;
+    height: 14px;
+    background: #111;
+}
+
+.psfa_txt02 {
+    margin-bottom: 30px;
+}
+
+.scwd_txt02 > p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #9e9e9e;
+}
+
+/* ==================================================
+	이론 정답확인
+================================================== */
+.ranswer01_tit {
+    display: flex;
+    align-items: center;
+}
+
+.ranswer01_left {
+    position: relative;
+    flex-basis: 20%;
+    text-align: center;
+    font-family: 'SUIT';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.ranswer01_left > span {
+    display: block;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    color: #155eb6;
+}
+
+.ranswer01_left:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: #aac1ff;
+}
+
+.ranswer01_right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-basis: 80%;
+    padding-left: 25px;
+    line-height: 1.4;
+    color: #111;
+    font-weight: 500;
+}
+
+.ranswer01_right > p {
+    flex-basis: 70%;
+    padding-right: 15px;
+}
+
+.ranswer01_right .ranswer_box {
+    flex-basis: 30%;
+    max-width: 193px;
+    background: #f2f6fc;
+    border-radius: 4px;
+    padding: 7px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    color: #155eb6;
+}
+
+.ranswer01_short {
+    font-size: 20px;
+}
+
+.ranswer01_long {
+    font-size: 15px;
+}
+
+/* ==================================================
+	이론 정답확인(사지선다형)
+================================================== */
+.ranswer01_que {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.ranswer01_que > li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background: #fff;
+}
+
+.ranswer01_que > li:nth-child(1) {
+    border-top: 1px solid #aac1ff;
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-radius: 7px 0px 0px 0px;
+}
+
+.ranswer01_que > li:nth-child(2) {
+    border-top: 1px solid #aac1ff;
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-right: 1px solid #aac1ff;
+    border-radius: 0 7px 0px 0px;
+}
+
+.ranswer01_que > li:nth-child(3) {
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-radius: 0px 0px 0px 7px;
+}
+
+.ranswer01_que > li:nth-child(4) {
+    border-bottom: 1px solid #aac1ff;
+    border-left: 1px solid #aac1ff;
+    border-right: 1px solid #aac1ff;
+    border-radius: 0px 0px 7px 0px;
+}
+
+.ranswer01_que > li.canswer,
+.ranswer01_que > li.canswer.wanswer {
+    border: 2px solid #26a94b;
+    background: #d6eec6;
+}
+
+.ranswer01_que > li.wanswer {
+    background: #f6c9c7;
+}
+
+.ranswer01_que > li h3 {
+    position: absolute;
+    top: 15px;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    background: #dce0e8;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.ranswer01_que > li.canswer h3 {
+    background: #26a94b;
+}
+
+.ranswer01_que > li.canswer.wanswer h3,
+.ranswer01_que > li.wanswer h3 {
+    background: #1d377d;
+}
+
+/* 사지선다형 */
+.ranswer01_choice {
+    width: 100%;
+    line-height: 1.3;
+    font-weight: 600;
+    word-break: keep-all;
+    color: #111;
+}
+
+.ran01choice_short {
+    padding: 10px 80px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.ran01choice_long {
+    padding: 10px 20px 10px 80px;
+    font-size: 18px;
+}
+
+/* 이미지선다형 */
+.matter01_img {
+    width: 100%;
+    text-align: center;
+}
+
+.matter01_img img {
+    max-height: 175px;
+    border-radius: 7px;
+}
+
+/* ==================================================
+	문제유형 - O&X형
+================================================== */
+.ranswer02_que {
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr) [2];
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.ranswer02_que:before {
+    content: '';
+    position: absolute;
+    left: calc(50% - 0.5px);
+    width: 1px;
+    height: 100%;
+    background: #aac1ff;
+}
+
+.ranswer02_que > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ranswer02_que > li.on {
+    border: 2px solid #155eb6;
+    background: #f2f6fc;
+}
+
+.ranswer02_que > li:nth-child(1).on,
+.ranswer02_que > li:nth-child(1):hover {
+    border-radius: 7px 0px 0px 7px;
+}
+
+.ranswer02_que > li:nth-child(2).on {
+    border-radius: 0px 7px 7px 0px;
+}
+
+.ranswer02_que > li.canswer {
+    border: 2px solid #26a94b;
+    background: #d6eec6;
+}
+
+.ranswer02_que > li.canswer .mo,
+.ranswer02_que > li.wanswer .mo {
+    background: url('../images/theory/o_on.svg');
+}
+
+.ranswer02_que > li.wanswer {
+    background: #f6c9c7;
+}
+
+.ranswer02_que > li.canswer .mx,
+.ranswer02_que > li.wanswer .mx {
+    background: url('../images/theory/x_on.svg');
+}
+
+/* ==================================================
+	제이쿼리 CSS
+================================================== */
+.question_detail {
+    display: none;
+}
+
+.question_check {
+    display: none;
+}
+
+.prog_bar {
+    position: relative;
+    height: 42px;
+}
+
+#question_check {
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.ui-progressbar-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0e276c;
+    border-radius: 4px;
+    height: 100%;
+}

@@ -1,0 +1,1 @@
+export { OXProhibited } from './OXProhibited';

@@ -1,0 +1,347 @@
+@charset "utf-8";
+
+/* ==================================================
+	login 메인
+================================================== */
+.login_con {
+}
+
+.login_con > h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.12em;
+    color: #0e276c;
+    margin-bottom: 5rem;
+}
+
+.login_con > h1 {
+    font-family: 'Outfit';
+    font-size: 8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #111111;
+}
+
+.login_con > h1 span {
+    font-weight: 200;
+    color: #155eb6;
+}
+
+.login_con > p {
+    margin-top: 6rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #111111;
+    line-height: 1.6;
+    letter-spacing: -0.12em;
+}
+
+.login_btn {
+    font-family: 'SUIT';
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background: #1d377d;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.23), inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+    border-radius: 4px;
+    margin-top: 6rem;
+    padding: 1.6rem 4rem;
+}
+
+.manual_btn {
+    font-family: 'SUIT';
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    background: #3868a3;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+/* modal 창 */
+.login_con .md_width1 {
+    text-align: center;
+    width: 560px;
+    padding: 50px;
+}
+
+.login_con .modal .login_tit {
+    font-family: 'Outfit';
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #155eb6;
+}
+
+.login_con .modal .login_tit span {
+    display: block;
+    font-weight: 200;
+    color: #0e276c;
+}
+
+.login_con .modal .login_txt {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #666666;
+}
+
+.login_con .modal p.login_txt {
+    font-weight: 500;
+}
+
+.login_con .modal .img {
+    margin-bottom: 2rem;
+    height: 78px;
+}
+
+/* ====== 언어선택 ====== */
+.lan_select {
+    position: relative;
+    margin: 3rem auto;
+    width: 160px;
+    height: 32px;
+    border: solid 1px #a9c0ff;
+    border-radius: 15px;
+    background-color: #0e276c;
+    background-image: url('../images/login/arrow_lower.svg');
+    background-position-x: calc(100% - 15px);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.lan_select.active {
+    border-radius: 17px 17px 0 0;
+    background-image: url('../images/login/arrow_up.svg');
+    transition: 0.1s;
+}
+
+.lan_select .label {
+    display: inline-block;
+    width: inherit;
+    height: 32px;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'SUIT';
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.lan_select .lan_optionList {
+    position: relative;
+    top: -1px;
+    left: -1px;
+    width: inherit;
+    max-height: 0;
+    padding: 0;
+    font-family: 'SUIT';
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #155eb6;
+    background-color: white;
+    list-style-type: none;
+    border-radius: 0 0 14px 14px;
+    border: solid 1px #a9c0ff;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+    overflow: hidden;
+    transition: 0.2s ease-in;
+    opacity: 0;
+}
+
+.lan_select.active .lan_optionList {
+    max-height: 500px;
+    opacity: 1;
+}
+
+.lan_select .lan_item {
+    position: relative;
+    padding: 9px 0;
+    color: #666666;
+    border-bottom: 1px solid #a9c0ff;
+    transition: 0.1s;
+}
+
+.lan_select .lan_item:hover {
+    background-color: #d7e2ff;
+}
+
+.lan_select .lan_item:last-child {
+    border-bottom: 0 none;
+}
+
+.lan_select .lan_item.active {
+    color: #fff;
+}
+
+.lan_select .lan_item img {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 16px;
+    height: 100%;
+}
+
+.lan_select .lan_item:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 16px;
+    height: 100%;
+}
+
+.lan_select .kor {
+    background: url('../images/login/kor_icon.svg') 20px center no-repeat;
+}
+
+.lan_select .eng {
+    background: url('../images/login/eng_icon.svg') 20px center no-repeat;
+}
+
+.lan_select .jp {
+    font-family: 'Noto_Sans_JP';
+    font-weight: 400;
+    background: url('../images/login/jp_icon.svg') 20px center no-repeat;
+}
+
+.lan_select .cn {
+    font-family: 'Noto_Sans_SC';
+    font-style: normal;
+    font-weight: 400;
+    background: url('../images/login/cn_icon.svg') 20px center no-repeat;
+}
+
+.lan_select span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+}
+
+/* 입력 스타일 */
+.login_box {
+    width: 412px;
+    margin: 0 auto;
+}
+
+.form-group {
+    position: relative;
+    border: solid 1px #d9d9d9;
+    border-radius: 10px;
+    margin-bottom: 11px;
+}
+
+input[type='mobile'],
+input[type='id2'],
+input[type='text'],
+input[type='password'] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px !important;
+    -webkit-appearance: none;
+    box-shadow: none;
+    padding: 0px 10px 0 50px;
+    box-sizing: border-box;
+    height: 50px;
+    font-family: 'SUIT';
+    font-weight: 600;
+    font-size: 1.6rem;
+    text-align: left;
+    color: #666666;
+}
+
+input[type='text'] {
+    background: url('../images/login/id.svg') 23px center no-repeat;
+}
+
+input[type='text']:active,
+input[type='text']:hover,
+input[type='text']:visited {
+    background: url('../images/login/id_act.svg') 23px center no-repeat;
+}
+
+input[type='id2'] {
+    background: url('../images/login/id2.svg') 20px center no-repeat;
+    background-size: 20px;
+}
+
+input[type='id2']:active,
+input[type='id2']:hover,
+input[type='id2']:visited {
+    background: url('../images/login/id2_act.svg') 20px center no-repeat;
+    background-size: 20px;
+}
+
+input[type='mobile'] {
+    background: url('../images/login/mobile.svg') 23px center no-repeat;
+    background-size: 20px;
+}
+
+input[type='mobile']:active,
+input[type='mobile']:hover,
+input[type='mobile']:visited {
+    background: url('../images/login/mobile_act.svg') 23px center no-repeat;
+    background-size: 20px;
+}
+
+input[type='password'] {
+    background: url('../images/login/lock.svg') 25px center no-repeat;
+}
+
+input[type='password']:hover {
+    background: url('../images/login/lock_act.svg') 25px center no-repeat;
+}
+
+input[type='password']:disabled,
+input[type='text']:disabled {
+    background: #ebebeb;
+}
+
+/* 버튼 */
+.blue_btn {
+    color: #fff;
+    background: #1d377d;
+    border-radius: 4px;
+}
+
+.small_btn {
+    width: 82px;
+    font-family: 'SUIT';
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 0.45rem 0;
+    box-shadow: inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+    filter: drop-shadow(1px 3px 2px rgba(0, 0, 0, 0.23));
+}
+
+.wide_btn {
+    width: 412px;
+    font-family: 'SUIT';
+    padding: 1.75rem 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.23), inset 0px -3px 4px rgba(0, 0, 0, 0.26);
+}
+
+.close_btn {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    width: 20px;
+    height: 20px;
+    background: url('../images/login/close.svg') center no-repeat;
+}
+
+.login_con .modal .modal_btn {
+    margin-top: 1rem;
+}
+
+/* 로그인 결과 창 */
+.login_con .md_width2 {
+    text-align: center;
+    width: 434px;
+    padding: 630px 0 40px;
+}

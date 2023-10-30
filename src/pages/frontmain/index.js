@@ -1,0 +1,1 @@
+export { FrontMain } from './FrontMain';

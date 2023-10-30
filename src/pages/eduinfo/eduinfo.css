@@ -1,0 +1,60 @@
+#layer_menu {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#layer_menu ul {
+    display: grid;
+    gap: 0 -1px;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+#layer_menu ul:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+#layer_menu ul li {
+    margin-right: -1px;
+}
+
+#layer_menu ul li button {
+    width: 100%;
+    height: 98%;
+    padding: 11px 5px;
+    color: #b9b9b9;
+    font-size: 18px;
+    font-family: 'SUIT';
+    font-weight: 600;
+    font-style: normal;
+    border: 1px solid #98bbe0;
+    background: #fff;
+    box-shadow: none;
+    filter: unset;
+    border-radius: 0;
+}
+
+#layer_menu ul li:first-child button {
+    border-radius: 8px 0 0 8px;
+}
+
+#layer_menu ul li:last-child button {
+    border-radius: 0 8px 8px 0;
+}
+
+#layer_menu ul li button.on {
+    background: #0e276c;
+    color: #fff;
+}
+
+#layer_menu ul li button:hover {
+    background: #0e276c;
+    color: #fff;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}

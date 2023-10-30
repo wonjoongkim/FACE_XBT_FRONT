@@ -1,0 +1,1 @@
+export { EduInfo } from './EduInfo';
